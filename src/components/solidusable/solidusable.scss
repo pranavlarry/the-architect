@@ -1,0 +1,23 @@
+.solid {
+    background-color: rgb(236,235,233);
+    text-align: center;
+    &__list{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding-bottom: 170px; 
+    }
+    &__item{
+        padding: 0 43px;
+    }
+    &__sub{
+        font-weight: bold;
+    }
+    &__img{
+        width: 90px;
+    }
+    &__heading{
+        font-family: 'Mukta', sans-serif;
+        padding: 115px 115px 80px 115px;
+    }
+}

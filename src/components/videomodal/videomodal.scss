@@ -1,0 +1,29 @@
+.videomodal{
+    background-color: rgb(236,235,233);
+    &__list{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style-type: none;
+    }
+    &__item{
+        padding: 60px;
+    }
+    &__playbtn{
+        padding: 5px 13px;
+        font-size: 2rem;
+        border: 2px solid;
+        border-radius: 50%;
+    }
+    &__btn{
+        background: none;
+        border: none;
+    }
+    &__item--padding-less{
+        padding-left: 20px!important;
+    }
+    &__para{
+        font-size: .8rem;
+    }
+
+}

@@ -1,6 +1,6 @@
 const parts = require("./webpack.parts");
 
-const pagesArr = ["component1Page", "homepage","navpage","intropage","talkaboutpage"];
+const pagesArr = ["component1Page", "homepage","navpage","intropage","talkaboutpage", "videomodalpage","solidusablepage"];
 
 module.exports = pagesArr.map(s =>
   parts.page(
