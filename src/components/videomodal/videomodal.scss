@@ -1,6 +1,7 @@
 .videomodal{
     background-color: rgb(236,235,233);
     &__list{
+        margin: 0;
         display: flex;
         justify-content: center;
         padding: 0;

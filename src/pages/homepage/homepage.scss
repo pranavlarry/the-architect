@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/bootstrap";
+
+html,body,content {
+    width: 100%;
+    overflow-x: hidden;
+}
+@import "../../components/gridimages/gridimages.scss";
+@import "../../components/intro/intro.scss";
+@import "../../components/navbar/navbar.scss";
+@import "../../components/slider/slider.scss";
+@import "../../components/solidusable/solidusable.scss";
+@import "../../components/talkabout/talkabout.scss";
+@import "../../components/videomodal/videomodal.scss";

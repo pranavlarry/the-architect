@@ -1,0 +1,46 @@
+.slide {
+    &__indicators{
+        margin-left: 2%;
+        margin-right: 0;
+    }
+    &__indicators{
+        justify-content: flex-start;
+        margin-bottom: 95px;
+    }
+    &__indicatorslist{
+        text-indent:0!important;
+        width:65px!important;
+        height: 40px!important;
+        background-color: transparent!important;
+        opacity: 1!important;
+    }
+    &__indicatorslink {
+        font-size: 18px;
+        font-style: italic;
+        color: #fff!important;
+    }
+    .active {
+        .slide__indicatorslink {
+            border-bottom: 2px solid #fff;
+        }
+    }
+    &__item{
+        max-height: 700px;
+    }
+    &__caption {
+        position: absolute;
+        color: #fff;
+        top: 265px;
+        left: 308px;
+        font-size: 3.5em;
+        font-weight: 650;
+    }
+    &__portfolio {
+        position: absolute;
+        bottom: 113px;
+        right: 300px;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 450;
+    }
+}

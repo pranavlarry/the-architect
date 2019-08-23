@@ -1,0 +1,63 @@
+.gridimages{
+    padding: 115px 0;
+    text-align: center;
+    &__container {
+        height: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1.1fr 1.1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "cell1 cell3 cell3 cell6" "cell2 cell3 cell3 cell7" "cell2 cell4 cell5 cell5";
+      }
+
+      &__heading {
+        padding-bottom: 60px;
+        font-size: 2.5rem;
+      }
+
+      &__cell1 {
+        grid-area: cell1;
+      }
+      
+      &__cell2 {
+        grid-area: cell2;
+      }
+      
+      &__cell3 {
+        grid-area: cell3;
+      }
+      
+      &__cell4 {
+        grid-area: cell4;
+      }
+      
+      &__cell5 {
+        grid-area: cell5;
+      }
+      
+      &__cell6 {
+        grid-area: cell6;
+      }
+      
+      &__cell7 {
+        grid-area: cell7;
+      }
+
+      &__link {
+        background-color: black;
+        color: white;
+        padding: 11px 118px;
+        font-size: .8rem;
+      }
+
+}
+
+  
+  .container {
+    height: 486px;
+    width: 830px;
+    margin-bottom: 90px;
+  }
+  
+  
+  

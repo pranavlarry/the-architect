@@ -1,4 +1,7 @@
 .navbar {
+    z-index: 2000;
+    position: absolute;
+    width: 100%;
     &__logo {
         font-family: 'Mukta', sans-serif;
         color: #fff!important;
@@ -17,4 +20,7 @@
     &__item {
         padding: 0 8px;
     }
+}
+.bg-dark {
+    background-color: transparent !important;
 }
