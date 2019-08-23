@@ -4,6 +4,12 @@ html,body,content {
     width: 100%;
     overflow-x: hidden;
 }
+.modal-open{
+    padding-right: 0!important;
+}
+.modal.fade.show {
+    padding-right: 0 !important;
+}
 @import "../../components/gridimages/gridimages.scss";
 @import "../../components/intro/intro.scss";
 @import "../../components/navbar/navbar.scss";
@@ -11,3 +17,4 @@ html,body,content {
 @import "../../components/solidusable/solidusable.scss";
 @import "../../components/talkabout/talkabout.scss";
 @import "../../components/videomodal/videomodal.scss";
+@import "../../components/footer/footer.scss";
