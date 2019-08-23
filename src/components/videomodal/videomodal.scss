@@ -28,4 +28,16 @@
         font-size: .8rem;
     }
 
+    @media (max-width:855px){
+        &__item {
+            padding: 30px;
+        }
+    }
+    @media (max-width:767px){
+        text-align: center;
+        &__list{
+            display: block;
+        }
+    }
+
 }

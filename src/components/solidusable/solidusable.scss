@@ -20,4 +20,13 @@
         font-family: 'Mukta', sans-serif;
         padding: 115px 115px 80px 115px;
     }
+    @media (max-width: 767px) {
+        &__heading{
+            font-size: 2rem;
+            padding: 60px 40px;
+        }
+        &__list {
+            display: block;
+        }
+    }
 }

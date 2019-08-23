@@ -24,3 +24,15 @@
 .bg-dark {
     background-color: transparent !important;
 }
+
+@media (max-width: 767px) {
+    .bg-dark {
+        background-color: #343a40 !important;
+    }
+    .navbar {
+        position: relative;
+        &__collapse {
+            text-align: center;
+        }
+    }
+}
