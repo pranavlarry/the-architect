@@ -49,15 +49,34 @@
         padding: 11px 118px;
         font-size: .8rem;
       }
+      .container {
+        height: 486px;
+        width: 830px;
+        margin-bottom: 90px;
+      }
+      @media (max-width:767px) {
+        &__container{
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+          grid-template-areas: "cell2 cell4 " "cell2 cell7 " "cell5 cell5 " "cell3 cell3" "cell3 cell3" "cell1 cell6";
+        }
+        &__link {
+          padding: 11px 24px;
+        }
+        &__heading {
+          font-size: 2rem;
+        }
+        .container{
+          width: fit-content;
+          height: fit-content;
+        }
+      }
+
 
 }
 
   
-  .container {
-    height: 486px;
-    width: 830px;
-    margin-bottom: 90px;
-  }
+
   
   
   
