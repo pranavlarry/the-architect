@@ -1,37 +1,44 @@
 .talkabout {
-    height: 500px;
+  height: 500px;
+  &__info {
+    background-image: radial-gradient(rgb(140, 139, 137) 5%, rgb(105,104,102) 15%);
+    background-position: 0 0;
+    background-size: 25px 25px;
+  }
+  
+  &__imgcontent {
+    padding: 0;
+  }
+
+  &__con {
+    width: fit-content;
+    margin: auto;
+  }
+
+  &__heading {
+    color: #fff;
+    padding-top: 136px;
+    font-weight: 640;
+  }
+
+  &__link {
+    color: #fff!important;
+    line-height: 10;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  @media (max-width: 1360px) {
+    height: auto;
+  }
+
+  @media (max-width: 600px) {
     &__info {
-        background-image: radial-gradient(rgb(140, 139, 137) 5%, rgb(105,104,102) 15%);
-        background-position: 0 0;
-        background-size: 25px 25px;
+      height: 300px;
     }
-    &__imgcontent{
-        padding: 0;
+
+    &__heading {
+      padding-top: 60px;
     }
-    &__con {
-        width: fit-content;
-        margin: auto;
-    }
-    &__heading{
-        color: #fff;
-        padding-top: 136px;
-        font-weight: 640;
-    }
-    &__link{
-        color: #fff!important;
-        line-height: 10;
-        font-size: 0.8rem;
-        font-weight: 500;
-    }
-    @media (max-width: 1360px){
-        height: auto;
-    }
-    @media (max-width: 600px){
-        &__info {
-            height: 300px;
-        }
-        &__heading{
-            padding-top: 60px;
-        }
-    }
+  }
+
 }

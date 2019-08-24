@@ -1,77 +1,83 @@
 .slide {
-    &__indicators{
-        margin-left: 2%;
-        margin-right: 0;
+  &__indicators {
+    margin-left: 2%;
+    margin-right: 0;
+  }
+
+  &__indicators {
+    position: absolute;
+    width: fit-content;
+    margin: 0;
+    left: 21vw;
+    bottom: 6vw;
+  }
+
+  &__indicatorslist {
+    text-indent:0!important;
+    width:65px!important;
+    height: 40px!important;
+    background-color: transparent!important;
+    opacity: 1!important;
+  }
+
+  &__indicatorslink {
+    font-size: 18px;
+    font-style: italic;
+    color: #fff!important;
+  }
+
+  .active {
+    .slide__indicatorslink {
+      border-bottom: 2px solid #fff;
     }
-    &__indicators{
-        position: absolute;
-        width: fit-content;
-        margin: 0;
-        left: 21vw;
-        bottom: 6vw;
-    }
-    &__indicatorslist{
-        text-indent:0!important;
-        width:65px!important;
-        height: 40px!important;
-        background-color: transparent!important;
-        opacity: 1!important;
-    }
-    &__indicatorslink {
-        font-size: 18px;
-        font-style: italic;
-        color: #fff!important;
-    }
-    .active {
-        .slide__indicatorslink {
-            border-bottom: 2px solid #fff;
-        }
-    }
-    &__item{
-        max-height: 700px;
-    }
+  }
+  &__item {
+    max-height: 700px;
+  }
+
+  &__caption {
+    position: absolute;
+    color: #fff;
+    bottom: 21vw;
+    left: 21vw;
+    font-size: 3.5em;
+    font-weight: 650;
+  }
+
+  &__portfolio {
+    position: absolute;
+    bottom: 8vw;
+    right: 21vw;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 450;
+  }
+
+  @media (max-width: 1250px) {
     &__caption {
-        position: absolute;
-        color: #fff;
-        bottom: 21vw;
-        left: 21vw;
-        font-size: 3.5em;
-        font-weight: 650;
+      font-size: 2.5rem;
     }
+  }
+
+  @media (max-width:767px) {
+    &__caption {
+      font-size: 1.5rem;
+      top: 15vw;
+      left: 7vw;
+    }
+
+    &__indicators {
+      position: relative;
+      background-color: black;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      text-align: center;
+    }
+
     &__portfolio {
-        position: absolute;
-        bottom: 7.5vw;
-        right: 21vw;
-        color: #fff;
-        font-size: 1.3rem;
-        font-weight: 450;
+      left: 7vw;
+      font-size: .8rem;
     }
-
-    @media (max-width: 1250px){
-        &__caption {
-            font-size: 2.5rem;
-        }
-    }
-
-    @media (max-width: 1024px){
-        &__portfolio {    
-            bottom: 3.5vw;
-            left: 21vw;
-        }
-    }
-
-    @media (max-width:767px){
-        &__caption {
-            font-size: 1.5rem;
-            top: 15vw;
-            left: 7vw;
-        }
-        &__indicators{
-            left: 40vw;
-        }
-        &__portfolio{
-            left: 41vw;
-            font-size: 1rem;
-        }
-    }
+  }
 }
