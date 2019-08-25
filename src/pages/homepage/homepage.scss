@@ -1,15 +1,19 @@
 @import "~bootstrap/scss/bootstrap";
 
-html,body,content {
-    width: 100%;
-    overflow-x: hidden;
+html, body, content {
+  width: 100%;
+    // overflow-x: hidden;
 }
+
 .modal-open{
-    padding-right: 0!important;
+  padding-right: 0 !important;
 }
+
 .modal.fade.show {
-    padding-right: 0 !important;
+  padding-right: 0 !important;
 }
+$black: #000;
+$white: #fff;
 // @import "https://fonts.googleapis.com/css?family=Mukta:800&display=swap";
 @import "../../components/gridimages/gridimages.scss";
 @import "../../components/intro/intro.scss";

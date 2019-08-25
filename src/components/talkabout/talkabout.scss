@@ -1,7 +1,7 @@
 .talkabout {
   height: 500px;
   &__info {
-    background-image: radial-gradient(rgb(140, 139, 137) 5%, rgb(105,104,102) 15%);
+    background-image: radial-gradient(rgb(140, 139, 137) 5%, rgb(105, 104, 102) 15%);
     background-position: 0 0;
     background-size: 25px 25px;
   }
@@ -11,21 +11,22 @@
   }
 
   &__con {
-    width: fit-content;
     margin: auto;
+    width: fit-content; 
   }
 
   &__heading {
-    color: #fff;
-    padding-top: 136px;
+    color: $white;
     font-weight: 640;
+    padding-top: 136px;
   }
 
   &__link {
-    color: #fff!important;
-    line-height: 10;
-    font-size: 0.8rem;
+    color: $white !important;
+    font-size: .8rem;
     font-weight: 500;
+    line-height: 10;
+
   }
   @media (max-width: 1360px) {
     height: auto;

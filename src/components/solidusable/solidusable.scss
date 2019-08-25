@@ -1,5 +1,6 @@
+$bg: rgb(236, 235, 233);
 .solid {
-  background-color: rgb(236,235,233);
+  background-color: $bg;
   text-align: center;
   &__list {
     display: flex;
@@ -21,7 +22,7 @@
   }
 
   &__heading {
-    font-family: 'Mukta', sans-serif;
+    font-family: "Mukta", sans-serif;
     padding: 115px 115px 80px 115px;
   }
 

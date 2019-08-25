@@ -1,18 +1,20 @@
 .gridimages {
   padding: 115px 0;
   text-align: center;
+
   &__container {
-    height: 100%;
-    margin: 0;
-    display: grid;
+
+    display: grid;  
+    grid-template-areas: "cell1 cell3 cell3 cell6" "cell2 cell3 cell3 cell7" "cell2 cell4 cell5 cell5";
     grid-template-columns: 1.1fr 1.1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "cell1 cell3 cell3 cell6" "cell2 cell3 cell3 cell7" "cell2 cell4 cell5 cell5";
+    height: 100%; 
+    margin: 0;
   }
 
   &__heading {
-    padding-bottom: 60px;
     font-size: 2.5rem;
+    padding-bottom: 60px;
   }
 
   &__cell1 {
@@ -44,24 +46,24 @@
   }
 
   &__link {
-    background-color: black;
-    color: white !important;
-    text-decoration: none !important;
-    padding: 11px 118px;
+    background-color: $black;
+    color: $white !important;
     font-size: .8rem;
+    padding: 11px 118px;
+    text-decoration: none !important;
   }
 
   .container {
     height: 486px;
-    width: 830px;
     margin-bottom: 90px;
+    width: 830px;
   }
 
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     &__container {
+      grid-template-areas: "cell2 cell4 " "cell2 cell7 " "cell5 cell5 " "cell3 cell3" "cell3 cell3" "cell1 cell6";
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: "cell2 cell4 " "cell2 cell7 " "cell5 cell5 " "cell3 cell3" "cell3 cell3" "cell1 cell6";
     }
 
     &__link {
@@ -73,8 +75,8 @@
     }
 
     .container {
-      width: fit-content;
       height: fit-content;
+      width: fit-content;
     }
   }       
 
