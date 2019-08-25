@@ -5,14 +5,14 @@
   &__logo {
     font-family: 'Mukta', sans-serif;
     color: #fff!important;
-    font-size: 36px;
+    font-size: 40px;
     line-height: .75;
-    padding-left: 35px;
+    padding: 17px 20px;
   }
   
   &__collapse {
     justify-content: flex-end;
-    padding-bottom: 15px;
+    padding-bottom: 45px;
   }
 
   &__link {
@@ -38,5 +38,14 @@
     &__collapse {
       text-align: center;
     }
+
+    &__collapse {
+      padding-bottom: 15px; 
+    }
+  
+    &__logo {
+      padding: 5px 10px;
+    }
   }
+
 }
