@@ -13,17 +13,20 @@
   }
 
   &__indicatorslist {
-    text-indent:0!important;
-    width:65px!important;
-    height: 40px!important;
-    background-color: transparent!important;
-    opacity: 1!important;
+    text-indent:0 !important;
+    width:65px !important;
+    height: 40px !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    border: none !important;
   }
 
   &__indicatorslink {
-    font-size: 18px;
+    font-size: 19px;
     font-style: italic;
-    color: #fff!important;
+    color: #fff !important;
+    padding-bottom: 5px;
+    text-decoration: none !important;
   }
 
   .active {
@@ -46,11 +49,34 @@
 
   &__portfolio {
     position: absolute;
-    bottom: 8vw;
+    bottom: 7vw;
     right: 21vw;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 450;
+    font-size: 19px;
+  }
+  
+  &__underline {
+    border-top: 2px solid white;
+    width: 87px;
+    position: absolute;
+    right: -2px;
+    top: 16px;
+  }
+
+  &__cline {
+    position: absolute;
+    border-bottom: 2px solid white;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    bottom: 8vw;
+  }
+
+  @media (max-width: 1100px) {
+    &__cline {
+      display: none;
+    }
   }
 
   @media (max-width: 1250px) {
@@ -59,11 +85,22 @@
     }
   }
 
+  @media (min-width: 1860px) {
+    &__caption {
+      top: 8vw;
+    }
+
+  }
+
   @media (max-width:767px) {
     &__caption {
       font-size: 1.5rem;
       top: 15vw;
       left: 7vw;
+    }
+
+    &__underline{
+      display: none;
     }
 
     &__indicators {

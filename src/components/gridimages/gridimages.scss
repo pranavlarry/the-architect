@@ -45,7 +45,8 @@
 
   &__link {
     background-color: black;
-    color: white;
+    color: white !important;
+    text-decoration: none !important;
     padding: 11px 118px;
     font-size: .8rem;
   }
