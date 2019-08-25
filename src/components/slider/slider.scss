@@ -104,10 +104,12 @@
     &__indicators {
       background-color: $black;
       left: 0;
+      margin-left: 0;
       position: relative;
       text-align: center;
       top: 0;
       width: 100%;
+      
     }
 
     &__portfolio {
