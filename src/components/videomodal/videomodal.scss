@@ -1,6 +1,17 @@
 $bg: rgb(236, 235, 233);
+$lineclr: rgb(209, 209, 207);
+$first: calc(12% + 1px);
+$second: calc(29% + 1px);
+$third: calc(50% + 1px);
+$fourth: calc(72% + 1px);
+$fifth: calc(89% + 1px);
 .videomodal {
   background-color: $bg;
+  background-image: linear-gradient(90deg, transparent 12%, $lineclr $first , transparent 12%),
+  linear-gradient(90deg, transparent 29%, #d1d1cf $second, transparent 29%), 
+  linear-gradient(90deg, transparent 50%, #d1d1cf $third, transparent 50%),
+  linear-gradient(90deg, transparent 72%, $lineclr $fourth , transparent 72%),
+  linear-gradient(90deg, transparent 89%, $lineclr $fifth , transparent 89%);
 
   &__list {
     display: flex;

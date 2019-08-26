@@ -1,12 +1,25 @@
 $bg: rgb(236, 235, 233);
+$lineclr: rgb(209, 209, 207);
+$first: calc(12% + 1px);
+$second: calc(29% + 1px);
+$third: calc(50% + 1px);
+$fourth: calc(72% + 1px);
+$fifth: calc(89% + 1px);
 .solid {
   background-color: $bg;
+  background-image: linear-gradient(90deg, transparent 12%, $lineclr $first , transparent 12%),
+  linear-gradient(90deg, transparent 29%, #d1d1cf $second, transparent 29%), 
+  linear-gradient(90deg, transparent 50%, #d1d1cf $third, transparent 50%),
+  linear-gradient(90deg, transparent 72%, $lineclr $fourth , transparent 72%),
+  linear-gradient(90deg, transparent 89%, $lineclr $fifth , transparent 89%);
   text-align: center;
   &__list {
     display: flex;
     justify-content: center;
     list-style-type: none;
     padding-bottom: 170px; 
+    padding-left: 11px;
+    margin: 0;
   }
 
   &__item {
@@ -22,7 +35,7 @@ $bg: rgb(236, 235, 233);
   }
 
   &__heading {
-    font-family: "Mukta", sans-serif;
+    font-family: 'Raleway';
     padding: 115px 115px 80px 115px;
   }
 
@@ -34,6 +47,11 @@ $bg: rgb(236, 235, 233);
     
     &__list {
       display: block;
+      padding-left: 0;
     }
   }
 }
+.test{
+  width: 1;
+}
+
