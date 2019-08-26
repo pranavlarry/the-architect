@@ -1,0 +1,44 @@
+.row
+    ol.carousel-indicators(style="background:black;")
+        li.slide__indicatorslist.active(data-target='#carouselExampleIndicators' data-slide-to='0') 
+            a.slide__indicatorslink(href="#") 01
+        li.slide__indicatorslist(data-target='#carouselExampleIndicators' data-slide-to='1') 
+            a.slide__indicatorslink(href="#") 02
+        li.slide__indicatorslist(data-target='#carouselExampleIndicators' data-slide-to='2') 
+            a.slide__indicatorslink(href="#") 03
+    .col-6
+        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+            .carousel-inner
+                .carousel-item.active.slide__item
+                    img.d-block.w-100(src='../../assets/images/slider1.jpg' alt='First slide')
+                .carousel-item.slide__item
+                    img.d-block.w-100(src='../../assets/images/slider2.jpg' alt='Second slide')
+                .carousel-item.slide__item
+                    img.d-block.w-100(src='../../assets/images/slider3.jpg' alt='Third slide')
+    .col-6
+         #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+            .carousel-inner
+                .carousel-item.active.slide__item
+                    img.d-block.w-100(src='../../assets/images/slider1.jpg' alt='First slide')
+                .carousel-item.slide__item
+                    img.d-block.w-100(src='../../assets/images/slider2.jpg' alt='Second slide')
+                .carousel-item.slide__item
+                    img.d-block.w-100(src='../../assets/images/slider3.jpg' alt='Third slide')
+    //- .col-6
+        //- #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+        //-     .carousel-inner
+        //-         .carousel-item.active.slide__item
+        //-         img.d-block.w-100(src='../../assets/images/slider1.jpg' alt='First slide')
+        //-         h1.slide__caption A fresh vision
+        //-             br
+        //-             | for living spaces
+        //-         .carousel-item.slide__item
+        //-         img.d-block.w-100(src='../../assets/images/slider2.jpg' alt='Second slide')
+        //-         h1.slide__caption Find your 
+        //-             br 
+        //-             | Perfect House Plan
+        //-         .carousel-item.slide__item
+        //-         img.d-block.w-100(src='../../assets/images/slider3.jpg' alt='Third slide')
+        //-         h1.slide__caption Create your dream
+        //-             br
+        //-             | home to live 

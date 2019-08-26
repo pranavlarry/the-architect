@@ -36,6 +36,7 @@ $fifth: calc(89% + 1px);
 
   &__content {
     font-size: .8rem;
+    line-height: 1.7;
   }
 
   &__copy {
@@ -45,10 +46,15 @@ $fifth: calc(89% + 1px);
 
   &__home {
     color: $black !important;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 200;
     padding-left: 160px;
     text-decoration: none !important;
+  }
+
+  &__link {
+    text-decoration: none !important;
+    width: 12px;
   }
 
   &__list--padding--more {
