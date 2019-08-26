@@ -47,7 +47,7 @@ $fifth: calc(89% + 1px);
     color: $black !important;
     font-size: 30px;
     font-weight: 200;
-    padding-left: 215px;
+    padding-left: 160px;
     text-decoration: none !important;
   }
 
@@ -61,6 +61,10 @@ $fifth: calc(89% + 1px);
     }
 
     &__list--padding--more {
+      padding-left: 0;
+    }
+
+    &__home {
       padding-left: 0;
     }
 

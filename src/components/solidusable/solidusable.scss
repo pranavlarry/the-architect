@@ -50,8 +50,13 @@ $fifth: calc(89% + 1px);
       padding-left: 0;
     }
   }
+
+  &__darkline {
+    border-top: 67px solid $black;
+    margin-bottom: 0;
+    width: 1px;
+    
+  }
 }
-.test{
-  width: 1;
-}
+
 

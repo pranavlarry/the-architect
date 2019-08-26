@@ -5,14 +5,13 @@ $third: calc(50% + 1px);
 $fourth: calc(72% + 1px);
 $fifth: calc(89% + 1px);
 .gridimages {
-  padding: 115px 0;
   text-align: center;
   background-image: linear-gradient(90deg, transparent 12%, $lineclr $first , transparent 12%),
   linear-gradient(90deg, transparent 29%, #d1d1cf $second, transparent 29%), 
   linear-gradient(90deg, transparent 50%, #d1d1cf $third, transparent 50%),
   linear-gradient(90deg, transparent 72%, $lineclr $fourth , transparent 72%),
   linear-gradient(90deg, transparent 89%, $lineclr $fifth , transparent 89%);
-
+  padding-bottom: 115px;
   &__container {
 
     display: grid;  
@@ -25,7 +24,7 @@ $fifth: calc(89% + 1px);
 
   &__heading {
     font-size: 2.5rem;
-    padding-bottom: 60px;
+    padding:60px 20px 40px 20px;
     font-family: 'Raleway', sans-serif;
   }
 
@@ -65,6 +64,13 @@ $fifth: calc(89% + 1px);
     text-decoration: none !important;
   }
 
+  &__darkline {
+    border-top: 67px solid $black;
+    margin-top: 0;
+    width: 1px;
+    
+  }
+
   .container {
     height: 486px;
     margin-bottom: 90px;
@@ -72,6 +78,7 @@ $fifth: calc(89% + 1px);
   }
 
   @media (max-width: 767px) {
+    padding-bottom: 65px;
     &__container {
       grid-template-areas: "cell2 cell4 " "cell2 cell7 " "cell5 cell5 " "cell3 cell3" "cell3 cell3" "cell1 cell6";
       grid-template-columns: 1fr 1fr;
